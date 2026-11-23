@@ -174,6 +174,8 @@ and this one under the phone line:
 
 Question 3: the `Contact` component is written once. How does it show three different people?
 
+--The Contact component is reused with the .map() method. It goes through each object in the contacts array and creates a separate Contact component for each one.
+
 Commit: `Part 2: props`
 
 ---
@@ -225,6 +227,8 @@ and inside `function App() {`, above the `return`, add:
 
 Question 4: what does the Console show? What is `contacts`, and what is each thing inside it?
 
+--The Console shows an array called contacts with three objects inside it. Each object contains the information for one contact: Justin Gray, Eren Yeager, and Hatsune Miku.
+
 10. Now replace your three `<Contact ... />` tags in `App.jsx` with these, which read from `contacts`:
 
 ```jsx
@@ -251,6 +255,8 @@ Question 4: what does the Console show? What is `contacts`, and what is each thi
 The page should look the same. But now all your data lives in `contacts.js`.
 
 Question 5: why `0`, `1` and `2`? What would you have to do if you had 100 contacts?
+
+--You would have to number each contact from 0 to 99 and write out each one individually
 
 Commit: `Part 3: data in contacts.js`
 
