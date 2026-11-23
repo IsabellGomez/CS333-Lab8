@@ -402,6 +402,7 @@ The page should look the same. `App` uses `Contact`, and now `Contact` uses `Ava
 16. A contact with no email. In `contacts.js`, delete the whole `email: ...` line from one of your contacts. Save and look at that contact.
 
 Question 9: what does that contact show for Email? Why?
+-- That contact still shows "Email:" but nothing appears after it. This is because the contact doesn't have an email value, so props.email is undefined
 
 Fix it in `Contact.jsx` by changing the email line to this:
 
